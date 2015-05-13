@@ -1,0 +1,881 @@
+$lightgreen: #0bcbba;
+$darkgreen: #039e8f;
+$white: #fff;
+$black: #000;
+$text-color: #787878;
+$text-green: #8ae5dd;
+$lightgrey: #efefef;
+$bg-grey: #f4f4f4;
+$orange: #f3731a;
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.container {
+	min-width: 960px;
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.header {
+	.row {
+		height: 140px;
+	}
+}
+
+.search {
+	height: 3em;
+	width: 440px;
+	margin: {
+		top: 60px;
+		left: auto;
+		right: auto;
+	}
+	.search-input {
+		border: solid 0.2em $lightgreen;
+		height: 41px;
+		width: 340px;
+		float: left;
+	}
+	.search-button {
+		background-image:url(../images/search-button.png);	
+		border: none;
+		width: 92px;
+		height: 41px;
+		float: left;
+	}
+}
+
+.publish {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	width: 140px;
+	position: relative;
+	top: -40px;
+	left: 450px;
+	.publish-button {
+		background-image:url(../images/publish-button.png);
+		border: none;
+		width: 140px;
+		height: 37px;
+	}
+}
+
+.broad-kind {
+	font-size: 20px;
+	color: $black;
+}
+
+.specific-kind {
+	font-size: 13px;
+	color: $text-color;
+}
+
+.specific-kind:hover {
+	color: $black;
+}
+
+.navbar {
+	background-color: $lightgreen;
+	margin-bottom: 0 !important;
+	.index {
+		width: 100px;
+		text-align: center;
+		:hover {
+			background-color: $darkgreen;
+			color: $white;
+		}
+	}
+	.my-info {
+		width: 140px;
+		text-align: center;
+		:hover {
+			background-color: $darkgreen;
+			color: $white;
+		}
+	}
+	.dropdown {
+		width: 300px;
+		position: relative;
+		top: 1px;
+		background: {
+			image: url(../images/dropdown-bg.png);
+			repeat: no-repeat;
+		}
+		a:hover {
+			background: {
+				image: url(../images/dropdown-bg.png);
+				repeat: no-repeat;
+			}
+		}
+		.dropdown-menu {
+			width: 300px;
+			padding-left: 2px;
+			li {
+				.kind-icon {
+					position: relative;
+					top: -4px;
+				}
+				.broad-kind {
+					color: $black !important;
+    				font-size: 20px !important;
+    				display: inline;
+    				margin-left: -20px;
+				}
+				.broad-kind:hover {
+					background-color: $white;
+				}
+				.specific {
+					margin-left: 28px;
+					.specific-kind {
+						font-size: 13px;
+						color: $text-color;
+					}
+				}
+			}
+			li:last-child{
+				margin-bottom: 17px;
+				.broad-kind {
+					margin-left: 7px;
+				}	
+			}
+		}
+		.dropdown-toggle {
+			color: $black;
+		}
+	}
+	a {
+		color: $white;
+		font-size: 1.5em;
+	}
+}
+
+	#login {
+		display: none;
+		font-size: 12px;
+		width: 240px;
+		height: 240px;
+		.login-bg {
+			background: {
+				image: url(../images/lg-bg.png);
+				repeat: no-repeat;
+			}
+			width: 260px;
+			height: 302px;
+		}
+		.log-head {
+			width: 64px;
+			height: 72px;
+			margin: 0 auto;
+			position: relative;
+		}
+		form {
+			width: 186px;
+			margin: {
+				top: -1px;
+				left: auto;
+				right: auto;
+			} 
+			.input-group {
+				input[type="text"] {
+					background: {
+						image: url(../images/user.png);
+						repeat: no-repeat;
+						position: 7px 9px;
+					}
+					padding-left: 29px;
+					border-top-left-radius:2px;
+					border-top-right-radius:2px;
+					position: relative;
+					left: -4px;
+					width: 190px;
+					height: 37px;
+				}
+				input[type="password"] {
+					background: {
+						image: url(../images/lock-blue.png);
+						repeat: no-repeat;
+						position: 7px 9px;
+					}
+					padding-left: 29px;
+					border-bottom-left-radius:2px;
+					border-bottom-right-radius:2px;
+					position: relative;
+					top: 1.5px;
+					left: -4px;
+					width: 190px;
+					height: 38px;
+				}
+				.form-control {
+					background-color: #c3ede7;
+					border: none !important;
+					border-radius: none !important;
+				}
+				a{
+					font-size: 12px;
+				}
+			}
+			#password-action {
+				position: relative;
+				top: 8px;
+				color: #406863;
+				font-size: 10px;
+			}
+			#remember-password {
+				position: relative;
+				left: -5px;
+			}
+			#forget-password {
+				position: relative;
+				left: 84px;
+				font-size: 10px;
+				color: #406863;
+				text-decoration: underline;
+			}
+			.log-button {
+				width: 188px;
+				height: 38px;
+				border: none;
+				border-radius: 3px;
+				background-image:url(../images/log-button.png);
+				position: relative;
+				top: 31px;
+				left: -3px;
+			}
+		}
+	}
+
+	#register {
+		.reg-bg {
+			background: {
+				image: url(../images/reg-bg.png);
+				repeat: no-repeat;
+			}
+			width: 260px;
+			height: 302px;
+		}
+		display: none;
+		font-size: 12px;
+		width: 240px;
+		height: 261px;
+		.reg-head {
+			width: 64px;
+			margin: 0 auto;
+			position: relative;
+			top: -30px;
+		}
+		form {
+			width: 200px;
+			margin: {
+				top: 43px;
+				left: auto;
+				right: auto;
+			}
+			.input-group {
+				input[type="text"] {
+					background: {
+						image: url(../images/user.png);
+						repeat: no-repeat;
+						position: 7px 9px;
+					}
+					padding-left: 29px;
+					border-top-left-radius:2px;
+					border-top-right-radius:2px;
+					position: relative;
+					
+					width: 190px;
+					height: 34px;
+				}
+				input[type="password"] {
+					background: {
+						image: url(../images/lock-blue.png);
+						repeat: no-repeat;
+						position: 7px 9px;
+					}
+					padding-left: 29px;
+					border-bottom-left-radius:2px;
+					border-bottom-right-radius:2px;
+					position: relative;
+					top: 2px;
+					width: 190px;
+					height: 32px;
+				}
+				#repeat-password {
+					margin-top: 2px;
+				}
+				.input-group-addon {
+					background-color: #fff3ea !important;
+				}
+				.form-control {
+					background-color: #e7fbf8;
+					border: none !important;
+				}
+				a{
+					font-size: 12px;
+				}
+			}
+			#protocol {
+				font-size: 10px;
+				position: relative;
+				top: 10px;
+			}
+			#protocol {
+				a {
+					color: $white;
+				}
+				a:hover {
+					color: $white;
+				}
+			}
+			.register-button {
+				width: 190px;
+				height: 39px;
+				border: none;
+				border-radius: 3px;
+				background-image:url(../images/reg-button.png);
+				position: relative;
+				top: 34px;
+			}
+		}
+	}
+
+.navbar-right {
+	li {
+		a {
+			font-size: 17px;
+		}
+		a:hover {
+			background-color: #039E8F !important;
+		}
+	}
+	.fancybox:hover {
+		color: $white;
+	}
+	.dropdown {
+		width: 110px;
+		a {
+			color: $text-green !important;
+			background-color: $lightgreen;
+		}
+		a:hover {
+			background-image: none;
+			color: grey;
+		}
+		.dropdown-toggle {
+			text-align: center;
+		}
+		.dropdown-toggle:focus {
+			background-color: $white !important;
+		}
+		.dropdown-menu {
+			min-width: 110px;
+			width: 110px;
+			border: none;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			li {
+				width: 100px !important;
+				text-align: center;
+				a {
+					background-color: $white;
+					text-align: center;
+					padding: 0 !important;
+					font-size: 17px;
+				}
+				a:hover {
+					color: $text-color !important;
+					background-color: $white !important;
+				}
+			}
+			li:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.open{
+		a {
+			background-color: $white !important;
+		}
+	}
+}
+
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0 !important;
+}
+
+.classify {
+	padding: {
+		left: 0 !important;
+		right: 0 !important;
+		top: 0;
+		bottom: 0;
+	}
+	ul {
+		width: 300px;
+		height: 560px;
+		-webkit-box-shadow: -1px 1px 2px rgba(4,0,0,0.25); 
+		-moz-box-shadow: -1px 1px 2px rgba(4,0,0,0.25); 
+		box-shadow: -1px 1px 2px rgba(4,0,0,0.25); 
+		border: {
+			left: solid 1px $lightgrey;
+			bottom: solid 1px $lightgrey;
+		}
+		padding: {
+			top: 10px;
+			left: 12px;
+			right: 8px;
+		}
+		list-style: none;
+		li {
+			margin-top: 8px;	
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+		li:last-child{
+			margin-bottom: 17px;
+			.broad-kind {
+				margin-left: 27px;
+			}	
+		}
+		.kind-icon {
+			position: relative;
+			top: -4px;
+			left: -1px;
+		}
+		.specific {
+			margin-left: 30px;
+		}
+	}
+}
+
+.slider {
+	padding-right: 0 !important;
+	width: 855px !important;
+}
+
+.subject {
+	padding: {
+		left: 0 !important;
+		right: 0 !important;
+	}
+	width: 845px !important;
+	position: relative;
+	top: -1px;
+	left: 15px;
+	a:first-child {
+		img {
+			margin-left: 0;
+			width: 211.25px;
+		}
+	}
+	a {
+		img {
+			margin-left: -5.5px;
+		}
+	}
+}
+
+.latest {
+	color: $text-color;
+	font-size: 19px;
+	margin: {
+		top: 35px;
+		left: -15px;
+	}
+	img {
+		position: relative;
+		top: -5px;
+		margin-right: 2px;
+	}
+}
+
+.goods {
+	a {
+		color: $black;
+	}
+	a:hover {
+		color: $black;
+	}
+	img {
+		position: relative;
+		left:-3px;
+	}
+	border: solid 2px $lightgrey;
+	-webkit-box-shadow: 0 2px 3px rgba(4, 0, 0, 0.27);
+	-moz-box-shadow: 0 2px 3px rgba(4, 0, 0, 0.27);
+	box-shadow: 0 2px 3px rgba(4, 0, 0, 0.27);
+	width: 350px !important;
+	height: 345px;
+	padding: {
+		left:0 !important;
+		right:0 !important;
+	}
+	margin: {
+		top: 25px;
+		left: 45px;
+	}
+	.title {
+		font: {
+			size: 18px;
+			weight: bold;
+		}
+		padding: {
+			top: 5px;
+			left: 10px;
+		}
+	}
+	.price {
+		span {
+			font: {
+				size: 25px;
+				weight: 500px;
+			}
+			position: relative;
+			top: 2px;
+			// left: -5px;
+		}
+		color: $orange;
+		font: {
+			size: 23px;
+			weight: 200;
+		}
+		position: relative;
+		top: 5px;
+		left: 5px;
+
+	}
+	.bottom {
+		margin-top: 22px;
+		height: 25px;
+		color: $text-color;
+		background-color: $bg-grey;
+		font-size: 13px;
+		.watched {
+			float: right;
+			padding: {
+				right: 10px;
+				top: 4px;
+			}
+			span {
+				color: $orange;
+			}
+		}
+	}
+}
+
+.goods:nth-child(3n+1){
+	margin-left: 0;
+}
+
+.fenye {
+	width: 355px;
+	margin: {
+		top: 100px;
+		left: auto;
+		right: auto;
+	}
+	a{
+		color: $lightgreen;
+	}
+}
+
+.fenye1 {
+	width: 355px;
+	margin: {
+		top: 100px;
+		left: auto;
+		right: auto;
+	}
+	position: relative;
+	left: 132px;
+	a{
+		color: $lightgreen;
+	}
+}
+
+.subject-img {
+	width: 1140px;
+	height: 100%;
+	margin-top: 20px;
+}
+
+.product-detail {
+	height: 550px;
+	-webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.23);
+	margin-top: 50px;
+	.left {
+		float: left;
+		width: 380px;
+		.title {
+			text-align: center;
+			position: relative;
+			top: 20px;
+			font-size: 16px;
+		}
+	}
+	.right {
+		float: left;
+		width: 760px;
+		.tips {
+			width: 706px;
+			margin: 0 auto;
+			position: relative;
+			top: 10px;
+		}
+		.title {
+			color: $orange;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+				left: 5px;
+			}
+			font-size: 16px;
+			width: 706px;
+			margin: 0 auto;
+		}
+		.price {
+			background-image: url(../images/price-bg.png);
+			height: 148px;
+			width: 774px;
+			margin-top: 38px;
+			color: $white;
+			position: relative;
+			left: -5px;
+			.sell{
+				position: relative;
+				left: 50px;
+				top: 30px;
+				float: left;
+			}
+			.sell-price {
+				position: relative;
+				left: 100px;
+				top: 20px;
+				font-size: 35px;
+				float: left;
+			}
+			.origin-price {
+				position: relative;
+				top: 70px;
+				float: left;
+			}
+			.dicker {
+				position: relative;
+				top: 100px;
+				left: -77px;
+				float: left;
+			}
+			.tel {
+				position: relative;
+				top: 100px;
+				float: left;
+			}
+			.qq {
+				position: relative;
+				top: 100px;
+				left: 40px;
+				float: left;
+			}
+		}
+		.hint {
+			border: dotted 2px $lightgrey;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+				left: 20px;
+				right: 20px;
+			}
+			text-align: center;
+		}
+		.describe {
+			.hint {
+				padding-top: 20px;
+				height: 200px;
+			}
+			width: 706px;
+			position: relative;
+			top: 10px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.my {
+	.left {
+		border: solid 1px $lightgrey;
+		float: left;
+		width: 300px;
+		.logo {
+			padding: 10px;
+			border-right: solid 1px $lightgrey;
+			float: left;
+		}
+		.complete {
+			float: left;
+			width: 158px;
+			padding: {
+				top: 20px;
+				bottom: 20px;
+				left: 35px;
+			}
+			border-bottom: solid 1px $lightgrey;
+			a {
+				color: $text-color;
+				padding-left: 5px;
+			}
+			img {
+				position: relative;
+				top: -2px;
+			}
+		}
+		.my-product {
+			float: left;
+			width: 158px;
+			padding: {
+				top: 20px;
+				bottom: 20px;
+				left: 35px;
+			}
+			a {
+				color: $text-color;
+				padding-left: 5px;
+			}
+			img {
+				position: relative;
+				top: -2px;
+			}
+		}
+		.top {
+			height: 135px;	
+			border-bottom: solid 1px $lightgrey;
+		}
+		.bottom {
+			text-align: center;
+			color: $lightgreen;
+			font-size: 14px;
+			padding: {
+				top: 10px;
+				bottom: 10px;
+			}
+		}
+	}
+	.right {
+		float: left;
+		.single-product {
+			border: solid 1px $lightgrey;
+			-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.28);
+			-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.28);
+			box-shadow: 0 1px 3px rgba(0,0,0,0.28);
+			margin: {
+				top: 40px;
+				left: 20px;
+			}
+			width: 770px;
+			height: 160px;
+			.publish-time {
+				background-color: $lightgrey;
+				padding: {
+					top: 5px;
+					bottom: 5px;
+					left: 15px;
+				}
+			}
+			.pic {
+				width: 77px;
+				height: 77px;
+				position: relative;
+				top: 15px;
+				left: 20px;
+			}
+			.title {
+				position: relative;
+				top: -68px;
+				left: 110px;
+			}
+			.price {
+				color: $orange;
+				font-size: 17px;
+				position: relative;
+				top: -25px;
+				left: 105px;
+			}
+			.edit-button {
+				float: right;
+				position: relative;
+				top: -80px;
+				right: 50px;
+			}
+			.delete {
+				float: right;
+				position: relative;
+				top: -40px;
+				a {
+					color: grey;
+					text-decoration: underline;
+				}
+				right: -5px;
+			}
+		}
+	}
+}
+
+.publish-form{
+	margin: {
+		top: 50px;
+		left: -90px;
+	}
+	.control-label {
+		font-size: 20px;
+	}
+	button {
+		background-image: url(../images/publish-now.png);
+		width: 184px;
+		height: 55px;
+		border: none;
+		margin-top: 60px;
+	}
+}
+
+.pagination li {
+	a{
+		border-radius: 0 !important;
+		margin: {
+		left: 8px;
+		right: 8px; 
+	}
+ 	}
+ 	a:hover{
+		color: #fff;
+		background-color: #0BCBBA !important;
+	}
+}
+
+.editinfo {
+	form {
+		.form-group {
+			margin-top: 50px;
+		}
+	}
+}
+
+.subject-img {
+	background-color: #3491e1;
+	height: 542px;
+	width: 100%;
+	.img {
+		width: 1280px;
+		margin: 0 auto;
+	}
+}
+
+.subject-goods {
+	margin-top: 50px;
+}
